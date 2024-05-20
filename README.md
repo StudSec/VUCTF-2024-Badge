@@ -18,3 +18,4 @@ These are all the files needed to install the challenge as it was presented duri
 
 ## References
 - https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-use-the-waveshare-rp2040-1-28-round-touch-lcd
+- https://www.waveshare.com/wiki/RP2040-LCD-1.28
