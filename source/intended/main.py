@@ -78,7 +78,6 @@ def read_bmp_to_buffer(lcd_display, file_handle):
 if __name__=='__main__':
     qmi8658=QMI8658()
     LCD = LCD_1inch28()
-    DOF_READ()
 
     LCD.fill(LCD.black)
     LCD.text("Booting..",90,115,LCD.green)
@@ -90,7 +89,6 @@ if __name__=='__main__':
     print("done")
     LCD.show()
     LCD.set_bl_pwm(65535)
-
 
     # Wait for device to be picked up
     while True:
@@ -121,16 +119,4 @@ if __name__=='__main__':
         LCD.show()
     print("[Device ready]")
 
-    # Challenge 1: Calibrate launch test
-    # Require a certain amount of variance in all sensors, set checklist
-    # Print message "stand by for launch" with launch velocity
-    # Wait for constant accelleration in specific direction
-    
-    # Challenge 2: Crash test
-    # Check for sudden spike in negative velocity
-    
-    # Challenge 3: Flag test
-
     DOF_READ()
-
-
