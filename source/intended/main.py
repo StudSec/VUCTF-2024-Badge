@@ -78,7 +78,8 @@ def read_bmp_to_buffer(lcd_display, file_handle):
 if __name__=='__main__':
     qmi8658=QMI8658()
     LCD = LCD_1inch28()
-
+    
+    LCD.set_bl_pwm(65535)
     LCD.fill(LCD.black)
     LCD.text("Booting..",90,115,LCD.green)
     LCD.show()
@@ -88,7 +89,6 @@ if __name__=='__main__':
         read_bmp_to_buffer(LCD, input_stream)
     print("done")
     LCD.show()
-    LCD.set_bl_pwm(65535)
 
     # Wait for device to be picked up
     while True:
